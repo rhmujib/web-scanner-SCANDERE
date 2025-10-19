@@ -1,0 +1,101 @@
+<!doctype html>
+<html><head><meta charset='utf-8'><title>SCANDERE - Enhanced Scan Report</title>
+<style>
+    body { background-color: #0b0f13; color: #e6eef8; font-family: Arial; padding: 20px; }
+    .title { color: #00d1ff; font-size: 32px; margin-bottom: 5px; }
+    .subtitle { color: #9ad7ff; margin-bottom: 10px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { padding: 10px; border: 1px solid #20272b; text-align: left; vertical-align: top; }
+    th { background: #071018; color: #9ad7ff; }
+    tr:nth-child(even) { background: #071018; }
+    .safe { background: #0b3b12; color: #b7f5c7; }
+    .vuln { background: #3b0b0b; color: #ffb7b7; }
+    .warn { background: #3b2b0b; color: #ffe9b7; }
+    .confidence { font-size: 12px; color: #b7cbd8; }
+    .snippet { font-family: monospace; white-space: pre-wrap; max-height: 160px; 
+               overflow: auto; background: #061014; padding: 8px; border: 1px solid #23303a; 
+               margin-top:6px; color: #dbeffc; }
+    .summary { margin-top: 10px; padding: 10px; background: #071018; 
+              border: 1px solid #23303a; }
+    details { margin-top: 6px; }
+    .xss-details { font-size: 11px; color: #a8c5d8; margin-top: 4px; }
+    </style></head><body>
+<div class='title'>ENHANCED SCAN REPORT - SCANDERE</div>
+<div class='subtitle'>Comprehensive XSS Detection (Reflected + DOM + Stored)</div>
+<div class='summary'><strong>Endpoints scanned:</strong> 6 &nbsp;&nbsp;<strong>Endpoints with issues:</strong> 1</div>
+<table>
+<thead><tr><th>Endpoint</th><th>XSS</th><th>SQLi</th><th>Open Redirect</th></tr></thead>
+<tbody>
+<tr>
+<td>http://www.itsecgames.com/</td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+<td class='warn'>FOUND<br><span class='confidence'>conf: 0.65, method: error-based</span><details><summary>snippet</summary><div class='snippet'><!doctype html>
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=architects+daughter">
+<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
+<script src="js/html5.js"></script>
+
+<title>bwapp, a buggy web application!</title>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>bwapp</h1>
+
+<h2>an extremely buggy web app !</h2>
+
+</header>
+
+<div id="menu">
+
+    <table>
+
+        <tr>   
+
+            <td><font color="#ffb717">home</font></td>
+            <td><a href="bugs.htm">bugs</a></td>
+            <td><a </div></details></td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+</tr>
+<tr>
+<td>http://www.itsecgames.com/bugs.htm</td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+</tr>
+<tr>
+<td>http://www.itsecgames.com/training.htm</td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+</tr>
+<tr>
+<td>http://www.itsecgames.com/download.htm</td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+</tr>
+<tr>
+<td>http://www.itsecgames.com/downloads/vulnerabilities.txt</td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+</tr>
+<tr>
+<td>http://www.itsecgames.com/downloads/bWAPP_intro.pdf</td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+<td class='safe'>SAFE<br><span class='confidence'>conf: 0.00</span></td>
+</tr>
+</tbody></table></body></html>
